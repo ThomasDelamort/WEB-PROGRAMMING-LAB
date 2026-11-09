@@ -1,11 +1,141 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page1</title>
+  </head>
+  <body>
+    <h1>Page 1</h1>
+    <ul>
+      <li><a href="#section-one">Section 1</a></li>
+      <li><a href="#section-two">Section 2</a></li>
+      <li><a href="#section-three">Section 3</a></li>
+      <li><a href="page2.html">Go to Page 2 Section 1</a></li>
+    </ul>
+    <h2 id="section-one">Section 1</h2>
+
+    <p>This is the first section of Page 1</p>
+
+    <img src="./images/image.png" alt="ReactJS" height="250px" width="250px" />
+
+    <h2 id="section-two">Section 2</h2>
+
+    <p>This is the second section of Page 1</p>
+    <ul>
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+    </ul>
+
+    <h2 id="section-three">Se4ction 3</h2>
+
+    <p>This is the third section of Page 1</p>
+
+    <table border="1">
+      <tbody>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 1</td>
+        </tr>
+        <tr>
+          <td>Row 1, Cell 1</td>
+          <td>Row 1, Cell 1</td>
+        </tr>
+      </tbody>
+    </table>
+    <br />
+
+    <footer>Footer of Page 1</footer>
+  </body>
+</html>
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>page2</title>
+  </head>
+  <body>
+    <h1>Page 2</h1>
+
+    <ul>
+      <li><a href="#page2Section1">Section 1</a></li>
+      <li><a href="page1.html#section-one">Section 2</a></li>
+      <li><a href="page1.html#section-two">Section 3</a></li>
+      <li><a href="./page1.html">Go to Page 1 Section 1</a></li>
+    </ul>
+
+    <h2 id="page2Section1">Section 1</h2>
+
+    <p>This is the first section of Page 2</p>
+
+    <form action="" method="">
+      <table>
+        <tr>
+          <td><label for="fname">First Name: </label></td>
+          <td>
+            <input type="text" name="fname" id="fname" placeholder="John" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="lname">Last Name: </label></td>
+          <td>
+            <input type="text" name="lname" id="lname" placeholder="Doe" />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="email">Email: </label></td>
+          <td>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="johndoe@email.com"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td><label for="age">Age: </label></td>
+          <td><input type="number" name="age" id="age" placeholder="18" /></td>
+        </tr>
+        <tr>
+          <td><label for="gender">Gender: </label></td>
+          <td>
+            <input type="radio" name="gender" value="male" />
+            <label for="gender">Male </label>
+            <input type="radio" name="gender" value="female" />
+            <label for="female">Female </label>
+          </td>
+        </tr>
+      </table>
+
+      <br />
+      <label for="interests">Interests:</label>
+      <input type="checkbox" name="interests" value="music" />
+      <label for="music">Music</label>
+      <input type="checkbox" name="interests" value="sports" />
+      <label for="sports">Sports</label>
+      <input type="checkbox" name="interests" value="movies" />
+      <label for="movies">Movies</label>
+
+      <br />
+      <label for="message">Message: </label><br />
+      <textarea
+        id="message"
+        rows="7"
+        cols="40"
+        placeholder="Say something"
+      ></textarea
+      ><br />
+      <label for="country">Country: </label>
+      <select id="country">
+        <option value="USA">USA</option></select
+      ><br />
+      <button>submit</button>
+    </form>
+    <br />
+    <footer>Footer of Page 2</footer>
+  </body>
 </html>
