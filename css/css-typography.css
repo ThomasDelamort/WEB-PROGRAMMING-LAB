@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+.englishColor {
+    color: pink;
+    font-size: 3rem;
+    font-family: "JetBrains mono", monospace;
+    font-weight: bold;
+    font-style: oblique;
+    text-transform: uppercase;
+    text-decoration: overline;
+    text-align: center;
+    text-shadow: 30px 40px 1px blue;
+}
+
+a {
+    color: rgb(120, 12, 0);
+    font-family: "JetBrains mono", monospace;
+    text-decoration: none;
+    text-transform: lowercase;
+}
