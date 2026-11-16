@@ -6,23 +6,24 @@ body {
 
 table {
     border: 1px solid #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
     text-align: center;
+    border-collapse: separate;
 }
 
-.font-arial {
-    font-family: Arial, Helvetica, sans-serif;
+.bg-red {
+    background-color: #e04f5f;
+    width: 2px;
+    color: #fff;
 }
 
 .bg-peach {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
     background-color: #F3B880;
     color: #000;
 }
 
 .bg-white {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
     background-color: #fff;
     color: #000;
 }
@@ -32,7 +33,3 @@ table {
     text-decoration: underline;
 }
 
-.bg-red {
-    background-color: #e04f5f;
-    color: #fff;
-}
