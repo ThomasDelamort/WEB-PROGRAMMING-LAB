@@ -12,14 +12,13 @@ h1 {
     color: #1a1718;
 }
 
-/* Spans are inline, so text-align centers them like text */
 div.nav {
     text-align: center;
 }
 
 div.nav span {
-    margin: 0 14px;
-    padding: 5px;
+    margin: 0 12px;
+    padding: 5px 12px;
     background-color: #929292;
     color: #fff;
     text-transform: uppercase;
@@ -28,9 +27,9 @@ div.nav span {
     box-shadow: 3px 3px 4px #1a1718;
 }
 
-/* overflow: hidden makes the card wrap around its floated children */
+
 div.card {
-    width: 95%;
+    width: 815px;
     margin: 12px auto;
     border: 3px solid #bbb;
     box-shadow: 3px 3px 5px #000;
@@ -39,11 +38,11 @@ div.card {
 
 .card p {
     float: left;
-    width: 55%;
+    width: 469px;
     margin: 0;
-    padding: 90px 40px 0 32px;
+    padding: 35px 20px 0 32px;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 19px;
 }
 
 .card p span {
@@ -56,6 +55,6 @@ div.card {
 
 .card img {
     float: right;
-    width: 45%;
+    width: 340px;
     height: auto;
 }
