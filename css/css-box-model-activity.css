@@ -1,110 +1,61 @@
+* {
+    box-sizing: border-box;
+}
+
 h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
-    font-style: bold;
+    font-weight: bold;
     text-decoration: underline;
-    letter-spacing: 0.2rem;
+    letter-spacing: 3px;
     text-align: center;
     color: #1a1718;
 }
 
+/* Spans are inline, so text-align centers them like text */
 div.nav {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
+    text-align: center;
 }
 
-div.nav > span {
+div.nav span {
+    margin: 0 14px;
+    padding: 5px;
     background-color: #929292;
-    padding: 0.3rem;
     color: #fff;
     text-transform: uppercase;
     font-family: Arial, Helvetica, sans-serif;
-    font: 13px;
+    font-size: 13px;
     box-shadow: 3px 3px 4px #1a1718;
 }
 
-div.card { 
-    display: flex; 
-    width: 95%; 
-    height: 200px; 
-    margin: 12px auto; border: 3px solid #bbb; 
-    box-shadow: 3px 3px 5px #000; 
-}
-.card p { 
-    flex: 58; 
-    align-self: center; 
-    padding: 0 40px 0 32px; 
-    font: 18px/1.05 Helvetica, Arial, sans-serif; 
+/* overflow: hidden makes the card wrap around its floated children */
+div.card {
+    width: 95%;
+    margin: 12px auto;
+    border: 3px solid #bbb;
+    box-shadow: 3px 3px 5px #000;
+    overflow: hidden;
 }
 
-.card p > span {
+.card p {
+    float: left;
+    width: 55%;
+    margin: 0;
+    padding: 90px 40px 0 32px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.card p span {
     font-weight: bold;
 }
 
-.card p > span > span {
+.card p span span {
     font-style: italic;
 }
 
 .card img {
-    flex: 50;
-    min-width: 0;
-    object-fit: cover;
-}
-
-/* Small tablets: keep the side-by-side card, but let the text reflow and
-   the card grow instead of clipping the paragraph */
-@media (max-width: 700px) {
-    div.nav {
-        flex-wrap: wrap;
-        gap: 1rem;
-        padding: 0 1rem;
-    }
-
-    div.card {
-        height: auto;
-        min-height: 200px;
-    }
-
-    .card p {
-        padding: 20px;
-        font-size: 16px;
-        line-height: 1.3;
-    }
-
-    /* Drop the hard line breaks so the text wraps to the available width */
-    .card p br {
-        display: none;
-    }
-}
-
-/* Phones: stack the text above the image */
-@media (max-width: 520px) {
-    h1 {
-        font-size: 1.6rem;
-        letter-spacing: 0.1rem;
-    }
-
-    div.nav {
-        gap: 0.5rem;
-    }
-
-    div.card {
-        flex-direction: column;
-        width: 100%;
-        margin: 12px 0;
-        border-width: 2px;
-        box-shadow: none;
-    }
-
-    .card p {
-        flex: none;
-        padding: 16px;
-    }
-
-    .card img {
-        flex: none;
-        width: 100%;
-        height: 220px;
-    }
+    float: right;
+    width: 45%;
+    height: auto;
 }
